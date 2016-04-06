@@ -1,0 +1,30 @@
+{
+  "name": "cristin-view",
+  "homepage": "https://github.com/hiof/cristin-view",
+  "authors": [
+    "Kenneth Dahlstrøm <kld@hiof.no>"
+  ],
+  "description": "cristin-view package",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "sass-mq": "~3.2.2",
+    "bootstrap-sass": "~3.3.6",
+    "jquery.scrollTo": "~1.4.11",
+    "handlebars": "~2.0.0",
+    "pathjs": "https://github.com/mtrpcic/pathjs.git",
+    "jQuery-ajaxTransport-XDomainRequest": "https://github.com/MoonScript/jQuery-ajaxTransport-XDomainRequest.git",
+    "detectjs": "https://github.com/darcyclarke/Detect.js.git",
+    "frontend": "https://github.com/hiof/frontend.git"
+  },
+  "main": "",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor",
+    "test",
+    "tests"
+  ]
+}

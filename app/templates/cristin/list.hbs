@@ -1,0 +1,32 @@
+<h3>CRIStin publiseringer</h3>
+<table  data-page-size="10" class="footable cristin-publications">
+  <thead>
+    <tr>
+      <th>Tittel</th>
+      <th data-hide="all">Publisert</th>
+      <th data-hide="all">Kategori</th>
+      <th>Se publisering</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each research}}
+    <tr>
+      <td>{{title}}</td>
+      <td>{{pubYear}}</td>
+      <td>{{category}} -> {{categorySub}}</td>
+      <td>{{#ifCond category 'Bok' }}<a href="http://bibsys-almaprimo.hosted.exlibrisgroup.com/primo_library/libweb/action/dlSearch.do?vid=HIO&institution=HIO&institution=HIO&search_scope=default_scope&lang=nor&afterPDS=true&check=checked&query=any,contains,{{searchterm}}" title="Søk etter følgende publisering hos biblioteket: {{title}}">Se bok</a>{{else}}{{/ifCond}}</td>
+    </tr>
+    {{/each}}
+  </tbody>
+  <tfoot class="hide-if-no-paging">
+    <tr>
+      <td colspan="4">
+        <div class="pagination-centered">
+          <ul class="pagination">
+          </ul>
+        </div>
+      </td>
+    </tr>
+
+  </tfoot>
+</table>
